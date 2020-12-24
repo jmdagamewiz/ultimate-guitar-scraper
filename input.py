@@ -1,21 +1,20 @@
 import requests
 
-# TODO: check if link is from ultimate-guitar
+# TODO: check if link is from ultimate-guitar site
 
 
 def get_input():
-    while True:
-        command = input()
-        if command.split()[0] == "ugs":
-            link = command.split()[1]
 
-            try:
-                page = requests.get(link)
-                break
-            except requests.exceptions.ConnectionError:
-                print("Link does not exist. Try again.")
+    command = input()
+    if command.split()[0] == "ugs":
+        link = command.split()[1]
 
-        else:
-            print("Wrong command. Try again")
+        try:
+            page = requests.get(link)
+        except requests.exceptions.ConnectionError:
+            print("Link does not exist. Try again.")
+
+    else:
+        print("Wrong command. Try again")
 
     return link
