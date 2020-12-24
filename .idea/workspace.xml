@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3cdb78a-05cc-4c35-9f14-8dccb3d9b2fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scraper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input.py" beforeDir="false" afterPath="$PROJECT_DIR$/input.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,10 +148,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="131" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1608797810433" />
-    <state x="184" y="7" key="SettingsEditor" timestamp="1608804253703">
+    <state x="184" y="7" key="SettingsEditor" timestamp="1608804418848">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608804253703" />
+    <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608804418848" />
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1608803043281">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
