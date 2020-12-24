@@ -4,6 +4,7 @@
     <list default="true" id="d3cdb78a-05cc-4c35-9f14-8dccb3d9b2fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input.py" beforeDir="false" afterPath="$PROJECT_DIR$/input.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,8 +120,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.scraper" />
         <item itemvalue="Python.input" />
+        <item itemvalue="Python.scraper" />
         <item itemvalue="Python.requests_experiment" />
       </list>
     </recent_temporary>
@@ -148,29 +149,56 @@
       <option name="presentableId" value="Default" />
       <updated>1608796152433</updated>
     </task>
+    <task id="LOCAL-00001" summary="Update input.py">
+      <created>1608805837080</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608805837080</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update input.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update input.py" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608796399857">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1608796399857" />
-    <state width="1345" height="359" key="GridCell.Tab.0.bottom" timestamp="1608805730214">
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1608805833034">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="359" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608805730214" />
-    <state width="1345" height="359" key="GridCell.Tab.0.center" timestamp="1608805730213">
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1608805833034" />
+    <state width="1345" height="164" key="GridCell.Tab.0.bottom" timestamp="1608807507304">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="359" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1608805730213" />
-    <state width="1345" height="359" key="GridCell.Tab.0.left" timestamp="1608805730213">
+    <state width="1345" height="164" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608807507304" />
+    <state width="1345" height="164" key="GridCell.Tab.0.center" timestamp="1608807507304">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="359" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1608805730213" />
-    <state width="1345" height="359" key="GridCell.Tab.0.right" timestamp="1608805730213">
+    <state width="1345" height="164" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1608807507304" />
+    <state width="1345" height="164" key="GridCell.Tab.0.left" timestamp="1608807507304">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="359" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1608805730213" />
+    <state width="1345" height="164" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1608807507304" />
+    <state width="1345" height="164" key="GridCell.Tab.0.right" timestamp="1608807507304">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="164" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1608807507304" />
     <state x="184" y="7" key="SettingsEditor" timestamp="1608804418848">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

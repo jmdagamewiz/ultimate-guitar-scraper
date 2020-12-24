@@ -1,13 +1,18 @@
 import requests
 
-# TODO: check if link is from ultimate-guitar site
 
+def get_link():
 
-def get_input():
+    command = ""
+    link = ""
+    try:
+        command, link = input().split()
 
-    command = input()
-    if command.split()[0] == "ugs":
-        link = command.split()[1]
+    # handles ValueError and IndexError in one line
+    except (ValueError, IndexError) as e:
+        print("Invalid format.")
+
+    if command == "ugs":
 
         try:
             page = requests.get(link)
@@ -15,6 +20,7 @@ def get_input():
             print("Link does not exist. Try again.")
 
     else:
-        print("Wrong command. Try again")
+        print("Wrong command.")
+        print("Try again.")
 
     return link
