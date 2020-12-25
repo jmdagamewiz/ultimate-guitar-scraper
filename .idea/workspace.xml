@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3cdb78a-05cc-4c35-9f14-8dccb3d9b2fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tabs.py" afterDir="false" />
+    <list default="true" id="d3cdb78a-05cc-4c35-9f14-8dccb3d9b2fd" name="Default Changelist" comment="Add tabs.py file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper.py" afterDir="false" />
@@ -164,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608807553089</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add tabs.py file">
+      <created>1608878371152</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608878371152</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,17 +189,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update input.py" />
     <MESSAGE value="Update input.py and main.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update input.py and main.py" />
+    <MESSAGE value="Add tabs.py file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add tabs.py file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608796399857">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1608796399857" />
-    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1608807551005">
+    <state x="412" y="0" key="CommitChangelistDialog2" timestamp="1608878582648">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1608807551005" />
+    <state x="412" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1608878582648" />
     <state width="1345" height="149" key="GridCell.Tab.0.bottom" timestamp="1608878232406">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
