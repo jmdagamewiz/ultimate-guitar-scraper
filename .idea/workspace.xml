@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3cdb78a-05cc-4c35-9f14-8dccb3d9b2fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tabs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input.py" beforeDir="false" afterPath="$PROJECT_DIR$/input.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,8 +121,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.input" />
         <item itemvalue="Python.scraper" />
+        <item itemvalue="Python.input" />
         <item itemvalue="Python.requests_experiment" />
       </list>
     </recent_temporary>
@@ -156,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608805837080</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update input.py and main.py">
+      <created>1608807553089</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608807553089</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,7 +172,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -172,41 +182,42 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update input.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update input.py" />
+    <MESSAGE value="Update input.py and main.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update input.py and main.py" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608796399857">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1608796399857" />
-    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1608805833034">
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1608807551005">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1608805833034" />
-    <state width="1345" height="164" key="GridCell.Tab.0.bottom" timestamp="1608807507304">
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1608807551005" />
+    <state width="1345" height="149" key="GridCell.Tab.0.bottom" timestamp="1608878232406">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="164" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608807507304" />
-    <state width="1345" height="164" key="GridCell.Tab.0.center" timestamp="1608807507304">
+    <state width="1345" height="149" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1608878232406" />
+    <state width="1345" height="149" key="GridCell.Tab.0.center" timestamp="1608878232405">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="164" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1608807507304" />
-    <state width="1345" height="164" key="GridCell.Tab.0.left" timestamp="1608807507304">
+    <state width="1345" height="149" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1608878232405" />
+    <state width="1345" height="149" key="GridCell.Tab.0.left" timestamp="1608878232405">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="164" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1608807507304" />
-    <state width="1345" height="164" key="GridCell.Tab.0.right" timestamp="1608807507304">
+    <state width="1345" height="149" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1608878232405" />
+    <state width="1345" height="149" key="GridCell.Tab.0.right" timestamp="1608878232405">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="164" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1608807507304" />
+    <state width="1345" height="149" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1608878232405" />
     <state x="184" y="7" key="SettingsEditor" timestamp="1608804418848">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608804418848" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1608803043281">
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1608874998764">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1608803043281" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1608874998764" />
     <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608805782332">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
