@@ -6,6 +6,3 @@ def write_to_docx(text):
     p = document.add_paragraph(text)
     document.save("demo.docx")
 
-
-write_to_docx("Hello, World!")
-
