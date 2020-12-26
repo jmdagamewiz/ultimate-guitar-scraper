@@ -20,4 +20,6 @@ def scrape(link):
     # which contains the tab
     json_data = div_attrs["data-content"]
 
-    return json_data
+    # TODO: fix this..
+    return [title, json_data]
+
