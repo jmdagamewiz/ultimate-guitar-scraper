@@ -1,26 +1,17 @@
-import requests
+import argparse
 
 
 def get_link():
 
-    command = ""
-    link = ""
-    try:
-        command, link = input().split()
+    parser = argparse.ArgumentParser(description="ultimate guitar chords scraper")
+    parser.add_argument("link", help="ultimate guitar page link")
 
-    # handles ValueError and IndexError in one line
-    except (ValueError, IndexError) as e:
-        print("Invalid format.")
+    args = parser.parse_args()
 
-    if command == "ugs":
+    ug_link = "https://tabs.ultimate-guitar.com/tab/"
 
-        try:
-            page = requests.get(link)
-        except requests.exceptions.ConnectionError:
-            print("Link does not exist. Try again.")
-
+    # checks if link from ultimate guitar site
+    if ug_link in args.link:
+        return args.link
     else:
-        print("Wrong command.")
-        print("Try again.")
-
-    return link
+        raise Exception("Must be valid ultimate guitar link.")
