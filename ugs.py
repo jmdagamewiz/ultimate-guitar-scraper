@@ -9,6 +9,7 @@ import docx_handler
 import sys
 sys.tracebacklimit = 0
 
+# save as .exe file and put to C:\Windows\System32 for use in cmd
 
 def main():
     link = input.get_link()
