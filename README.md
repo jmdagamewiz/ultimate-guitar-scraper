@@ -1,2 +1,4 @@
 # ultimate-guitar-scraper
-a program that scrapes an ultimate guitar link for chords and lyrics and turns it into a .docx file
+A command line application that scrapes information from a valid ultimate guitar link. 
+> Uses "ugs" command to use in CMD
+> Has the option to put the information to a .docx file
