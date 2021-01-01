@@ -10,12 +10,19 @@ sys.tracebacklimit = 0
 
 
 def main():
-    link = input.get_link()
+    args = input.get_args()
+    link = args.UG_link
 
     try:
         tab = guitar_tabs.GuitarTab(link)
 
-        docx_handler.write_to_doc(tab.title, tab.get_clean_tab())
+        if args.sh is None:
+            tab.show_info()
+
+        if args.dl is None:
+            docx_handler.write_to_doc(tab.title, tab.get_clean_tab())
+        else:
+            print(f"Download location is {args.dl}")
 
     except KeyError:
         print("Must be valid ultimate guitar link.")

@@ -24,7 +24,7 @@ class GuitarTab:
         self.song_title = self.json_obj["store"]["page"]["data"]["tab"]["song_name"]
         self.song_artist = self.json_obj["store"]["page"]["data"]["tab"]["artist_name"]
         self.title = self.song_title + " chords by " + self.song_artist
-        self.version = str(self.json_obj["store"]["page"]["data"]["tab"]["version"])
+        self.version = self.json_obj["store"]["page"]["data"]["tab"]["version"]
         self.author = self.json_obj["store"]["page"]["data"]["tab"]["username"]
 
         # TAB METADATA (with possibilities of not existing)
@@ -39,7 +39,7 @@ class GuitarTab:
             self.tuning = None
 
         if "capo" in self.json_obj["store"]["page"]["data"]["tab_view"]["meta"].keys():
-            self.capo = str(self.json_obj["store"]["page"]["data"]["tab_view"]["meta"]["capo"])
+            self.capo = self.json_obj["store"]["page"]["data"]["tab_view"]["meta"]["capo"]
         else:
             self.capo = None
 
@@ -49,8 +49,13 @@ class GuitarTab:
             self.key = None
         # ------
 
+        # TODO: how do you show strumming and chords?
         self.chords = None
-        self.strumming = self.json_obj["store"]["page"]["data"]["tab_view"]["strummings"]
+
+        if len(self.json_obj["store"]["page"]["data"]["tab_view"]["strummings"]) != 0:
+            self.strumming = self.json_obj["store"]["page"]["data"]["tab_view"]["strummings"]
+        else:
+            self.strumming = None
 
         self.tab = self.json_obj["store"]["page"]["data"]["tab_view"]["wiki_tab"]["content"]
 
@@ -61,3 +66,25 @@ class GuitarTab:
         self.tab = self.tab.replace("[/ch]", "")
 
         return self.tab
+
+    def show_info(self):
+        print(self.title)
+        print(f"Ver. {str(self.version)}")
+        print()
+        print(f"Difficulty: {self.difficulty}")
+        print(f"Tuning: {self.tuning}")
+        print(f"Capo: {str(self.capo)}")
+        print(f"Key: {self.key}")
+        print()
+        print("Strumming: ")
+        print(f"{self.strumming}")
+        print("Chords:")
+        print(f"{self.chords}")
+        print()
+        print(self.get_clean_tab())
+
+    def transpose_to(self):
+        pass
+
+    def download_to(self):
+        pass
