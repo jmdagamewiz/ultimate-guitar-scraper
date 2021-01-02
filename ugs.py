@@ -16,13 +16,11 @@ def main():
     try:
         tab = guitar_tabs.GuitarTab(link)
 
-        if args.sh is None:
+        if args.hide is not True:
             tab.show_info()
 
-        if args.dl is None:
-            docx_handler.write_to_doc(tab.title, tab.get_clean_tab())
-        else:
-            print(f"Download location is {args.dl}")
+        if args.dl is not None:
+            docx_handler.write_to_doc(tab, args.dl)
 
     except KeyError:
         print("Must be valid ultimate guitar link.")

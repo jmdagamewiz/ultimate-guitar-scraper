@@ -1,13 +1,11 @@
 from docx import Document
-import find_path
 
 
-def write_to_doc(title, text):
+def write_to_doc(tab_obj, dl_location):
     document = Document()
-    document.add_heading(title, 1)
+    document.add_heading(tab_obj.title, 1)
 
-    p = document.add_paragraph(text)
+    p = document.add_paragraph(tab_obj.get_clean_tab())
 
-    download_loc = find_path.get_download_path()
-    document.save(download_loc + "\\" + title + ".docx")
-    print("Saved file to ", download_loc)
+    document.save(dl_location + "\\" + tab_obj.title + ".docx")
+    print("Saved file to ", dl_location)
