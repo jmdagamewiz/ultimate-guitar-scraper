@@ -1,6 +1,5 @@
 import input
 import guitar_tabs
-import docx_handler
 
 # hides traceback for better user experience
 import sys
@@ -20,7 +19,7 @@ def main():
             tab.show_info()
 
         if args.dl is not None:
-            docx_handler.write_to_doc(tab, args.dl)
+            tab.download_to(args.dl)
 
     except KeyError:
         print("Must be valid ultimate guitar link.")

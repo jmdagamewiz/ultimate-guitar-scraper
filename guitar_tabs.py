@@ -1,6 +1,7 @@
 import requests
 import json
 
+from docx import Document
 from bs4 import BeautifulSoup
 
 
@@ -83,8 +84,11 @@ class GuitarTab:
         print()
         print(self.get_clean_tab())
 
-    def transpose_to(self):
-        pass
+    def download_to(self, dl_location):
+        document = Document()
+        document.add_heading(self.title, 1)
 
-    def download_to(self):
-        pass
+        p = document.add_paragraph(self.get_clean_tab())
+
+        document.save(dl_location + "\\" + self.title + ".docx")
+        print("Saved file to ", dl_location)
