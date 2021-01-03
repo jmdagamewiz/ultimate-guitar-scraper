@@ -23,6 +23,7 @@ def main():
 
     except KeyError:
         print("Must be valid ultimate guitar link.")
+        exit()
 
 
 if __name__ == "__main__":

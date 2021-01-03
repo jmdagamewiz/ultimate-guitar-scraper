@@ -1,5 +1,6 @@
 import requests
 import json
+import os
 
 from docx import Document
 from bs4 import BeautifulSoup
@@ -12,8 +13,13 @@ class GuitarTab:
     def __init__(self, link):
         self.link = link
 
-        # getting html from link
-        self.page = requests.get(self.link)
+        try:
+            # getting html from link using requests
+            self.page = requests.get(self.link)
+        except requests.ConnectionError:
+            print("Connection error encountered.")
+            exit()
+
         self.link_html = BeautifulSoup(self.page.text, "lxml")
 
         # parsing through html for json data
@@ -48,15 +54,7 @@ class GuitarTab:
             self.key = self.json_obj["store"]["page"]["data"]["tab_view"]["meta"]["tonality"]
         else:
             self.key = None
-        # ------
-
-        # TODO: how do you show strumming and chords?
-        self.chords = None
-
-        if len(self.json_obj["store"]["page"]["data"]["tab_view"]["strummings"]) != 0:
-            self.strumming = self.json_obj["store"]["page"]["data"]["tab_view"]["strummings"]
-        else:
-            self.strumming = None
+        # -------------------------------------------------------------------------------------- #
 
         self.tab = self.json_obj["store"]["page"]["data"]["tab_view"]["wiki_tab"]["content"]
 
@@ -77,18 +75,20 @@ class GuitarTab:
         print(f"Capo: {str(self.capo)}")
         print(f"Key: {self.key}")
         print()
-        print("Strumming: ")
-        print(f"{self.strumming}")
-        print("Chords:")
-        print(f"{self.chords}")
-        print()
         print(self.get_clean_tab())
 
     def download_to(self, dl_location):
-        document = Document()
-        document.add_heading(self.title, 1)
 
-        p = document.add_paragraph(self.get_clean_tab())
+        if os.path.isdir(dl_location):
 
-        document.save(dl_location + "\\" + self.title + ".docx")
-        print("Saved file to ", dl_location)
+            document = Document()
+            document.add_heading(self.title, 1)
+
+            p = document.add_paragraph(self.get_clean_tab())
+
+            document.save(dl_location + "\\" + self.title + ".docx")
+            print("Saved file to ", dl_location)
+
+        else:
+            print("Path is not a directory.")
+            exit()

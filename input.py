@@ -7,7 +7,7 @@ def get_args():
     dl_location = find_path.get_download_path()
 
     parser = argparse.ArgumentParser(description="ultimate guitar chords scraper",
-                                     usage="ugs UG_link [-h] [--dl [DOWNLOAD_LOCATION]] [--tp KEY] [--hide]")
+                                     usage="ugs UG_link [-h] [--dl [DOWNLOAD_LOCATION]] [--hide]")
 
     parser.add_argument("UG_link", help="ultimate guitar page link")
 
@@ -26,4 +26,5 @@ def get_args():
     if main_ug_link in args.UG_link:
         return args
     else:
-        raise Exception("Must be valid ultimate guitar link.")
+        print("Must be valid ultimate guitar link.")
+        exit()
